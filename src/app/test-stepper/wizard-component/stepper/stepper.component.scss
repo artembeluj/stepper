@@ -1,0 +1,21 @@
+@import '~bs-stepper/dist/css/bs-stepper.min.css';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.step {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bs-stepper-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-none {
+    visibility: hidden;
+}
+
+.color {
+    background-color: #0dcaf0;
+}

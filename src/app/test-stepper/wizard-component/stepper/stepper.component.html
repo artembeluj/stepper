@@ -1,0 +1,15 @@
+<div class="container">
+    <div id="stepper" class="bs-stepper">
+        <div class="bs-stepper-header">
+            <ng-container *ngFor="let number of numbers; let last = last">
+                <div class="step" [attr.data-target]="'#step-l-' + number">
+                    <button class="step-trigger" (click)="step(number)">
+                        <span class="bs-stepper-circle" [class.color]="selectedStep === number">{{number}}</span>
+                        <span class="bs-stepper-label">Email</span>
+                    </button>
+                    <div class="line" [class.display-none]="last"></div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

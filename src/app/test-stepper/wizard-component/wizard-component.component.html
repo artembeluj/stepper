@@ -1,0 +1,4 @@
+<app-stepper (currentStep)="step($event)" [numbers]="numbers"
+    [selectedStep]="currentStep"></app-stepper>
+<app-content [currentStep]="currentStep"></app-content>
+<app-buttons (step)="changeStep($event)"></app-buttons>
